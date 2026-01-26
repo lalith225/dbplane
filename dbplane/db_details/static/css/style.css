@@ -309,6 +309,7 @@ button:active, .btn:active {
     padding: 40px 5%;
     max-width: 1200px;
     margin: 0 auto;
+
 }
 
 .header-section {
@@ -332,6 +333,10 @@ button:active, .btn:active {
     border: 1px solid #d1d5db;
     overflow: hidden; /* Keeps corners rounded */
     box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    max-height: 65vh; /* Adjust this to fit your screen view */
+    overflow-y: auto;
+    overflow-x: auto;
+    position: relative;
 }
 
 .data-table {
@@ -344,6 +349,23 @@ button:active, .btn:active {
 .data-table thead {
     background-color: #1c2430;
     color: #ffffff;
+    position: sticky;
+    top: 0;
+    z-index: 10; /* Ensures it stays above the scrolling rows */
+    background-color: #1c2430;
+}
+.table-container::-webkit-scrollbar {
+    width: 6px;
+}
+
+.table-container::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 0 12px 12px 0;
+}
+
+.table-container::-webkit-scrollbar-thumb {
+    background: #1c2430;
+    border-radius: 10px;
 }
 
 .data-table th {
