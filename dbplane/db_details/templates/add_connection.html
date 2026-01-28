@@ -42,8 +42,12 @@
             <label>Password</label>
         {% include "input_password_field.html" with id="user_pass" name="password" placeholder="" %}
         {% elif db_type == 'rabbitmq' %}
-            <label>AMQP URI</label>
-            <input type="text" name="uri" placeholder="amqp://guest:guest@127.0.0.1:5672">
+            <label>Host</label>
+            <input type="text" name="host" placeholder="127.0.0.1">
+            <label>Port</label>
+            <input type="number" name="port" placeholder="15672">
+            <label>Password</label>
+        {% include "input_password_field.html" with id="user_pass" name="password" placeholder="" %}
         {% endif %}
 
         <div class="button-group">
