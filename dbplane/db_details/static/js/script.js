@@ -40,7 +40,7 @@ function closeModal() {
 }
 
 function confirmDelete() {
-	//TODO: Implement the delete logic
-	console.log("Deleted")
-  closeModal();
+    //TODO: Implement the delete logic
+    console.log("Deleted")
+    closeModal();
 }
