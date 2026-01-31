@@ -190,7 +190,9 @@ text-decoration: none; /* Removes underline */
 .container-button:active {
   transform: scale(0.95);
 }
-
+.trans:hover {
+    background-color: transparent !important
+}
 /*----------------------------------------------------------------
 #mongoconhtml*/
 .mongoconnect {
@@ -289,7 +291,7 @@ button, .btn {
 
 /* Hover Effect */
 button:hover, .btn:hover {
-    background-color: transparent !important; /* Slightly lighter */
+    background-color: #2a3647; /* Slightly lighter */
 }
 
 /* Click Effect (The "Press" feel) */
@@ -462,7 +464,7 @@ button:active, .btn:active {
 }
 
 .btn-connect-plus:hover {
-    background-color: transparent !important;
+    background-color: #219150;
 }
 
 .btn-connect-plus:active {
